@@ -257,7 +257,7 @@ p {
 
 /* for media queries */
 .feat-norm-hide {
-  display: block;
+  display: none;
 }
 
 .features__img {
