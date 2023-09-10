@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bankist</title>
+  </head>
+  <body>
+    <nav class="login-section">
+      <div class="mid">
+        <ion-icon name="cash-outline" class="icon"></ion-icon>
+      </div>
+      <div class="left">
+        <h3 class="login-welcome textx">Login to get started</h3>
+      </div>
+      <div class="right">
+        <form action="#" method="get">
+          <label for="username">
+            <input
+              placeholder="user"
+              type="text"
+              name="username"
+              id="username"
+              class="user--name login--username"
+          /></label>
+          <label for="password">
+            <input
+              placeholder="Pin"
+              type="password"
+              name="password"
+              id="password"
+              class="user--password login--password"
+              maxlength="4"
+          /></label>
+          <button type="button" class="login--btn btn">Login</button>
+        </form>
+      </div>
+    </nav>
+
+    <section class="app--display main--app">
+      <div class="main--section">
+        <div class="balance--amount">
+          <div class="balance--account">
+            <h3 class="textx">Current Balance</h3>
+            <p class="current--date">As of 01/08/2023, 20:04</p>
+          </div>
+          <div class="balance--amount-fig balance--amt">
+            <h1 class="balance--acct balance">0000€</h1>
+          </div>
+        </div>
+        <div class="movements--transactions">
+          <div class="movements--g">
+            <div class="movements">
+              <div class="movements--details movement">
+                <div class="movements-type movements-type-withdrawal">
+                  2 withdrawal
+                </div>
+                <div class="movements__date"></div>
+                <div class="movements-value movements-type-withdrawal-value">
+                  200€
+                </div>
+              </div>
+
+              <div class="movements--details movement">
+                <div class="movements-type movements-type-deposit">
+                  1 Deposit
+                </div>
+                <div class="movements__date"></div>
+
+                <div class="movements-value movements-type-deposit-value">
+                  40€
+                </div>
+              </div>
+            </div>
+            <div class="sort">
+              <div class="totals">
+                <span class="total-deposit total--">
+                  <p class="in parag">IN</p>
+                  <h3 class="textx total-input">16900€</h3> </span
+                ><span class="total-withdrawal total--">
+                  <p class="out parag">OUT</p>
+                  <h3 class="textx total-output">1400€</h3> </span
+                ><span class="total-interest total--">
+                  <p class="int parag">INTERESTS</p>
+                  <h3 class="textx total-int">100€</h3>
+                </span>
+              </div>
+              <div class="sortt">
+                <button class="sort-btn btn--sort">sort</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="transaction--detail transactions">
+            <div class="transfer general">
+              <h2 class="title">Transfer Money</h2>
+              <form action="#" class="trn-sect">
+                <span>
+                  <label for="username"
+                    ><input type="text" class="trf--name user_trf-name-input"
+                  /></label>
+                  <p class="trf-user">Transfer to</p>
+                </span>
+
+                <span>
+                  <label for="#" class="trf--label">
+                    <input type="number" class="amount trf--amt" />
+                    <p class="trf-user">amount</p>
+                  </label>
+                </span>
+                <span>
+                  <button type="button" class="--btn transfer--btn">
+                    send
+                  </button>
+                </span>
+              </form>
+            </div>
+
+            <div class="loan general">
+              <h2 class="title">Request Loan</h2>
+              <form action="#" class="trn-sect">
+                <span>
+                  <label for="#" class="loan--label">
+                    <input type="number" class="amount loan--input" />
+                    <p class="trf-user">amount</p>
+                  </label>
+                </span>
+                <span>
+                  <button type="button" class="--btn loan--btn">Enter</button>
+                </span>
+              </form>
+            </div>
+
+            <div class="close general">
+              <h2 class="title">Close Account</h2>
+              <form action="#" class="trn-sect">
+                <span>
+                  <label for="username"
+                    ><input type="text" class="trf--name user-name-close"
+                  /></label>
+                  <p class="trf-user">Confirm User</p>
+                </span>
+
+                <span>
+                  <label for="#" class="trf--label">
+                    <input
+                      maxlength="4"
+                      type="password"
+                      class="amount close-acct"
+                    />
+                    <p class="trf-user">Confirm PIN</p>
+                  </label>
+                </span>
+                <span>
+                  <button type="button" class="--btn close-btn">confirm</button>
+                </span>
+              </form>
+            </div>
+            <div class="timer">
+              <p class="timer--count">
+                You will be logged out in <span class="time"> 05:00 </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="scripts.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
