@@ -14,10 +14,21 @@ const btnOpsContainer = document.querySelector('.buttons--operation');
 const opsBtn = document.querySelectorAll('.btn--operations');
 const opContents = document.querySelectorAll('.operation--desc');
 
+// mediaQUERIES
+
+const openMenuBtn = document.querySelector('.menu-icon');
+
+const menuBtn = document.querySelector('.display-btn');
+const closeMenuBtn = document.querySelector('.close-menu');
+const sideBar = document.querySelector('.infoNav');
+const logo = document.querySelector('.logo--name');
+
 // modal window
 const showModal = function () {
   modalWindow.classList.remove('hidden');
   overlay.classList.remove('hidden');
+  if (sideBar.classList.contains('open-side-bar'))
+    sideBar.classList.remove('open-side-bar');
 };
 const closeModal = function () {
   modalWindow.classList.add('hidden');
@@ -253,12 +264,6 @@ dotContainer.addEventListener('click', function (e) {
 //MEDIA QUERIES
 // SIDE-BAR
 
-const openMenuBtn = document.querySelector('.menu-icon');
-
-const menuBtn = document.querySelector('.display-btn');
-const closeMenuBtn = document.querySelector('.close-menu');
-const sideBar = document.querySelector('.infoNav');
-const logo = document.querySelector('.logo--name');
 openMenuBtn.addEventListener('click', function () {
   menuBtn.classList.toggle('hide-menu');
   closeMenuBtn.classList.toggle('hide-menu');
